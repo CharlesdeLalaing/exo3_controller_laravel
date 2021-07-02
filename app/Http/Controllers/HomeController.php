@@ -13,7 +13,8 @@ class HomeController extends Controller
                 'sectionUpper' => 'Fresh Coffee', 
                 'sectionLower' => 'Worth Drinking', 
                 'paragraph' => 'Every cup of our quality artisan coffee starts with locally sourced, hand picked ingredients. Once you try it, our coffee will be a blissful addition to your everyday morning routine - we guarantee it!', 
-                'button' => 'Visit Us Today!'
+                'button' => 'Visit Us Today!',
+                'image' => 'img/intro.jpg'
                 ]
         ];
 
@@ -23,6 +24,6 @@ class HomeController extends Controller
                 with the highest quality ingredients. If you are not satisfied, please let us know and we
                 will do whatever we can to make things right!', 
         ];
-        return view('pages.home', compact('clearFixs'));
+        return view('pages.home', compact('clearFixs', 'ctas'));
     }
 }

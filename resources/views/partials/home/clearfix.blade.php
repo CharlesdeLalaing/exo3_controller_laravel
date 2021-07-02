@@ -2,7 +2,7 @@
     <div class="container">
         @foreach ($clearFixs as $clearFix)
             <div class="intro">
-                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{ asset('img/intro.jpg') }}" alt="">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src='{{ $clearFix->image }}' alt="">
                 <div class="intro-text left-0 text-center bg-faded p-5 rounded">
                     <h2 class="section-heading mb-4">
                         <span class="section-heading-upper">{{$clearFix->sectionUpper}}</span>
