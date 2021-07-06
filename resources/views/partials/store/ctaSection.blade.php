@@ -4,52 +4,52 @@
             <div class="col-xl-9 mx-auto">
                 <div class="cta-inner text-center rounded">
                     <h2 class="section-heading mb-5">
-                        <span class="section-heading-upper">{{ $storeText->sectionUpper }}</span>
-                        <span class="section-heading-lower">{{ $storeText->sectionLower }}</span>
+                        <span class="section-heading-upper">{{ $storeTexts[0]->sectionUpper }}</span>
+                        <span class="section-heading-lower">{{ $storeTexts[0]->sectionLower }}</span>
                     </h2>
                     <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
                         <li class="list-unstyled-item list-hours-item d-flex">
-                            {{$days->Su}}
-                            <span class="ml-auto">{{$status->closed}}</span>
+                            {{$storeDays[0]->day1}}
+                            <span class="ml-auto">{{$storeStatus[0]->close}}</span>
                         </li>
                         <li class="list-unstyled-item list-hours-item d-flex">
-                            {{$days->M}}
-                            <span class="ml-auto">{{$hours->longDay}}</span>
+                            {{$storeDays[0]->day7}}
+                            <span class="ml-auto">{{$storeHour[0]->longDay}}</span>
                         </li>
                         <li class="list-unstyled-item list-hours-item d-flex">
-                            {{$days->T}}
-                            <span class="ml-auto">{{$hours->longDay}}</span>
+                            {{$storeDays[0]->day6}}
+                            <span class="ml-auto">{{$storeHour[0]->longDay}}</span>
                         </li>
                         <li class="list-unstyled-item list-hours-item d-flex">
-                            {{$days->W}}
-                            <span class="ml-auto">{{$hours->longDay}}</span>
+                            {{$storeDays[0]->day5}}
+                            <span class="ml-auto">{{$storeHour[0]->longDay}}</span>
                         </li>
                         <li class="list-unstyled-item list-hours-item d-flex">
-                            {{$days->Th}}
-                            <span class="ml-auto">{{$hours->longDay}}</span>
+                            {{$storeDays[0]->day4}}
+                            <span class="ml-auto">{{$storeHour[0]->longDay}}</span>
                         </li>
                         <li class="list-unstyled-item list-hours-item d-flex">
-                            {{$days->F}}
-                            <span class="ml-auto">{{$hours->longDay}}</span>
+                            {{$storeDays[0]->day3}}
+                            <span class="ml-auto">{{$storeHour[0]->longDay}}</span>
                         </li>
                         <li class="list-unstyled-item list-hours-item d-flex">
-                            {{$days->S}}
-                            <span class="ml-auto">{{$hours->shortDay}}</span>
+                            {{$storeDays[0]->day2}}
+                            <span class="ml-auto">{{$storeHour[0]->shortDay}}</span>
                         </li>
                     </ul>
                     <p class="address mb-5">
                         <em>
-                            <strong>{{$contact->street}}</strong>
+                            <strong>{{$storeContact[0]->street}}</strong>
                             <br>
-                            >{{$contact->city}}
+                            >{{$storeContact[0]->city}}
                         </em>
                     </p>
                     <p class="mb-0">
                         <small>
-                            <em>>{{$contact->call}}</em>
+                            <em>>{{$storeContact[0]->call}}</em>
                         </small>
                         <br>
-                        >{{$contact->number}}
+                        >{{$storeContact[0]->number}}
                     </p>
                 </div>
             </div>
